@@ -159,6 +159,12 @@ func main() {
 			Usage:   "Generate a demo runtime.json",
 			Action:  generateRuntime,
 		},
+		{
+			Name:    "generate",
+			Aliases: []string{"gen"},
+			Usage:   "Generate a demo OCI bundle",
+			Action:  generateBundle,
+		},
 	}
 
 	app.Run(os.Args)
